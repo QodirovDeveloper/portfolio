@@ -1,0 +1,371 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+*::after,
+*::before
+{
+  box-sizing:border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body
+{
+  font-family: "Inter", serif;
+}
+:root
+{
+  --primary:#08546C;
+  --secondary: #ffa63a;
+}
+.container
+{
+  max-width: 1170px;
+  margin: 0 auto;
+  width: 100%;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+}
+.btn
+{
+  padding: 15px 30px;
+  font-weight: 600;
+  color: #b6cdd4;
+  transition: .3s;
+  border-radius: 25px;
+  display: inline-block;
+  border: 1px solid transparent;
+}
+.btn-primary
+{
+  background: #145e76;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #145e76;
+}
+.btn-primary:hover
+{
+  background: #145e7688;
+  border: 1px solid #fff;
+}
+.btn-primary:active
+{
+  transform: translateY(2px);
+}
+.btn-hovered:hover
+{
+  border: 1px solid #fff;
+}
+.btn-secondary
+{
+  background: var(--secondary);
+  color: white;
+  cursor: pointer;
+  border: 1px solid var(--secondary);
+}
+.btn-secondary:hover
+{
+  background: #145e7688;
+  border: 1px solid #fff;
+}
+.btn-secondary:active
+{
+  transform: translateY(2px);
+}
+.header
+{
+  min-height: 115vh;
+  position: relative;
+  background: var(--primary) url(../images/bg.png) no-repeat center / cover;
+}
+.nav
+{
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-menu
+{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav-menu__item a
+{
+  text-align: center;
+  padding-bottom: 3px;
+  color: #a1b5bb;
+  position: relative;
+  border-bottom: 1px solid transparent;
+  transition: .3s;
+}
+.nav-menu__item a::after
+{
+  bottom: 0;
+  height: 1px;
+  width: 0%;
+  transition: .3s;
+  background: #fff;
+  content: "";
+  position: absolute;
+  left: 0;
+}
+.nav-menu__item a:hover
+{
+  font-weight: 700;
+  color: #fff;
+}
+.nav-menu__item a:hover::after
+{
+  width: 70%;
+}
+.hero
+{
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero span
+{
+  padding: 16px 30px;
+  border-radius: 30px;
+  background: #094556;
+  font-family: "Schoolbell", serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33.42px;
+  color: #fff;
+}
+.hero h1
+{
+  padding-top: 40px;
+  padding-bottom: 30px;
+  color: #fff;
+  width: 537px;
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 80px;
+}
+.hero__p
+{
+  padding-bottom: 30px;
+  width: 511px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28.8px;
+  color: #849499;
+}
+.hero-image
+{
+
+  position: relative;
+  width: 460px;
+  height: 575px;
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
+  border-width: 20px;
+  background: #85A1AA;
+  border: 20px solid #265A6A
+}
+.hero-image img
+{
+  position: absolute;
+  top: -107px;
+  left: -23px;
+}
+.hero-title
+{
+  padding: 15px;
+  position: relative;
+  top: 100px;
+  left: 300px;
+  width: 300px;
+  height: 169px;
+  border-radius: 20px 28px;
+  border-width: 3px;
+  background: #FFFFFF14;
+  border: 3px solid #FFFFFF80;
+  backdrop-filter: blur(58px)
+
+}
+.hero-title p
+{
+  width: 244;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22.4px !important;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+}
+.hero-title__logo
+{
+  position: absolute;
+  display: flex;
+}
+.hero-title__logo img
+{
+  position: absolute;
+  border-radius: 50px;
+  top: 1px;
+  left: 5px;
+}
+.hero-title__logo p
+{
+  padding-left: 60px;
+}
+.hero-title-logo__p
+{
+  font-family: Inter;
+  font-weight: 600 !important;
+  font-size: 16px;
+  line-height: 22.4px;
+  letter-spacing: 5%;
+}
+.hero-title-logo__pp
+{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 12px !important;
+  color: #A1B5BB !important;
+  line-height: 22.4px;
+}
+.statistic
+{
+  padding: 70px 218px;
+  position: absolute;
+  width: 1145px;
+  top: 792px;
+  left: 186px;
+  border-radius: 30px;
+  background: #FFFFFF;
+  box-shadow: 0px 73px 80px 0px #0000000F;
+  color: #265A6A;
+}
+.statistic h3
+{
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 22.4px;
+  padding-bottom: 69px;
+}
+.statistic ul
+{
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 22.4px;
+}
+.statistic ul+ul
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.4px;
+}
+.main
+{
+  margin-top: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.main-h3
+{
+  color: #265A6A;
+  font-family: "Schoolbell", serif;
+  text-decoration: underline;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 22.4px;
+  padding-bottom: 30px;
+}
+.main-h2
+{
+  color: #265A6A;
+  width: 510px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 60px;
+  padding-bottom: 70px;
+}
+.main-box
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 26px;
+  margin-bottom: 200px;
+}
+.main-box1
+{
+  width: 273;
+  height: 251;
+  padding: 30px;
+  box-shadow: 0px 41.78px 33.42px 0px #0000000D;
+}
+.main-box1:hover span {
+  background: #FFA800; /* span'ning fondi qizil bo'ladi */
+}
+.main-box1:hover p
+{
+  color: #B2BBBD;
+}
+.main-box1:hover {
+  color: #fff !important;
+}
+.main-box1:hover {
+  background: #08546C; /* .main-box1 ning background rangi */
+  color: #fff !important; /* i elementi oq rangga o'zgaradi */
+}
+.main-box1:hover span i {
+  color: #fff !important; /* i elementi oq rangga o'zgaradi */
+}
+.main-box1 span
+{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  background: #F5FBFC;
+}
+.main-box1 p
+{
+  width: 215px;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #696969;
+}
+.main-box1 h3
+{
+  padding-top: 25px;
+  padding-bottom: 10px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29.05px;
+}
