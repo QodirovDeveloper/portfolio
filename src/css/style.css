@@ -316,8 +316,8 @@ body
 }
 .main-box1
 {
-  width: 273;
-  height: 251;
+  width: 273px !important;
+  height: 251px !important;
   padding: 30px;
   box-shadow: 0px 41.78px 33.42px 0px #0000000D;
 }
@@ -561,4 +561,25 @@ body
     background: #85A1AA;
     border: 20px solid #265A6A
   }
+  .statistic
+  {
+    text-align: center;
+    padding: 40px 58px;
+    max-width: 285px;
+  }
+  .main-box1
+  {
+    width: 173px !important;
+    height: 271px !important;
+    padding: 10px !important;
+  }
+  .main-box1 p
+{
+  width: 115px !important;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25.6px;
+  color: #696969;
+}
 }
