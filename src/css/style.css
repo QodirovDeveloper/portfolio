@@ -500,13 +500,22 @@ body
     font-size: 40px !important;
     width: 300px !important;
   }
+  body h2
+  {
+    font-size: 25px !important;
+    width: 300px !important;
+  }
+  .img
+  {
+    width: 300px !important;
+  }
   body h3
   {
-    font-size: 30px !important;
+    font-size: 20px !important;
   }
   body li
   {
-    font-size: 40px !important;
+    font-size: 12px !important;
   }
   body li
   {
@@ -529,5 +538,27 @@ body
   body span
   {
     font-size: 12px !important;
+  }
+  .hero-title
+  {
+    padding: 15px;
+    position: relative;
+    top: 240px;
+    left: 10px;
+    width: 300px;
+    height: 169px;
+    border-radius: 20px 28px;
+    border-width: 3px;
+  }
+  .hero-image
+  {
+    position: relative;
+    width: 310px;
+    height: 375px;
+    border-top-left-radius: 300px;
+    border-top-right-radius: 300px;
+    border-width: 20px;
+    background: #85A1AA;
+    border: 20px solid #265A6A
   }
 }
