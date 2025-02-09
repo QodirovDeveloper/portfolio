@@ -495,4 +495,39 @@ body
     /* position: absolute; */
     max-width: 385px;
   }
+  body h1
+  {
+    font-size: 40px !important;
+    width: 300px !important;
+  }
+  body h3
+  {
+    font-size: 30px !important;
+  }
+  body li
+  {
+    font-size: 40px !important;
+  }
+  body li
+  {
+    /* display: flex;
+    flex-wrap: wrap; */
+  }
+  body p
+  {
+    font-size: 12px !important;
+    width: 300px !important;
+  }
+  body a
+  {
+    font-size: 12px !important;
+  }
+  body div
+  {
+    font-size: 12px !important;
+  }
+  body span
+  {
+    font-size: 12px !important;
+  }
 }
